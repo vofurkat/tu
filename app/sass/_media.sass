@@ -4,24 +4,926 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px)
+	// header
+	header .header-main .header-mnu h2
+		font-size: em(152px)
+		left: -94px
+		bottom: 40px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1370px)
+	// header
+	header .header-main .header-mnu h2
+		font-size: em(132px)
+		left: -81px
+		bottom: 28px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1280px)
+	// header
+	header 
+		.header-top 
+			.logo
+				width: 355px
+			.container 
+				.left-bg
+					width: 400px
+					height: 314px
+					background-size: cover
+					left: -165px
+
+		.header-main 
+			.header-mnu 
+				ul 
+					li
+						margin-right: 14px
+			.header-search 
+				.search-text
+					width: 560px 
+					p
+						letter-spacing: 1px
+			.products-cats 
+				.product
+					height: 235px
+					&:nth-child(1),
+					&:nth-child(2),
+					&:nth-child(3),
+					&:nth-child(4)
+						width: 25%
+					&:nth-child(5),
+					&:nth-child(6),
+					&:nth-child(7),
+					&:nth-child(8)
+						width: 25%
+						margin-bottom: 20px
+					&:nth-child(9),
+					&:nth-child(10)
+						margin-bottom: 20px
+						width: 50%
+					&:nth-child(5)
+						margin-bottom: 0
+					a 
+						.info-bottom
+							top: 195px
+
+	// section-map
+	.section-map
+		.container
+			background-size: 600px 
+
+	// about-ous
+	.about-ous
+		.container 
+			.ous-box
+				padding-left: 0
+				.ous-item
+					&:nth-child(3)
+						.item-text
+							width: 99px
+			.ous-box__bottom 
+				p
+					letter-spacing: 1px
+					font-size: em(19px)
+			.what-tu
+				width: 400px
+				height: 400px
+				padding-left: 25px
+				.what-title
+					margin-bottom: 20px
+					span
+						font-size: em(33px)
+				.what-right
+					margin-bottom: 20px
+					p
+						font-size: em(17px)
+						line-height: 28px
+				.what-left
+					width: 370px
+					p
+						line-height: 25px
+						font-size: em(14px)
+			.what-tu__right
+				width: 540px
+				.tu-items
+					width: 180px
+					height: 200px
+					padding: 40px 20px 20px
+					p
+						font-size: em(15px)
+	
+	// what-need
+	.what-need
+		.what-need__box
+			padding-left: 0
+
+
+	// how-get
+	.how-get 
+		.how-get__title
+			margin-left: 0
+			width: 220px
+		.how-get__items
+			width: 720px
+			padding-left: 30px
+			padding-top: 115px
+			.how-item
+				width: 210px
+				height: 210px
+				margin-right: 15px
+			.it1
+				padding-top: 30px
+				&::after
+					content: ''
+					height: 1px
+					background-color: #fff
+					width: 88px
+					position: absolute
+					right: -52px
+					top: 50%
+					@include transform(translate(0, -50%))
+					z-index: 10
+			.it2
+				padding-top: 40px
+				&::after
+					content: ''
+					height: 1px
+					background-color: #fff
+					width: 88px
+					position: absolute
+					right: -52px
+					top: 50%
+					@include transform(translate(0, -50%))
+					z-index: 10
+			.it3
+				padding-top: 30px
+
+	// profitable
+	.profitable
+		.profitable-box
+			padding-left: 0
+
+	// special-offer
+	.special-offer 
+		height: auto
+		padding-bottom: 50px
+		.special-title
+			padding-left: 0
+		.offers-box 
+			.it1,
+			.it2
+				width: 50%
+				margin-bottom: 40px
+			.it3,
+			.it4
+				width: 50%
+
+	// ready-tu
+	.ready-tu 
+		.ready-title
+			padding-left: 0
+		.ready-desc
+			padding-left: 0
+		.ready-important
+			margin-left: 0
+
+	// six-reasons
+	.six-reasons 
+		.reason-box
+			padding-left: 0
+			.reason-left
+				padding-right: 50px	
+				.left-item 
+					.left-item__text
+						width: 300px
+			.reason-right
+				padding-left: 50px
+				.right-item 
+					.right-item__text
+						width: 310px
+
+	// comment
+	.comment 
+		.comment-title
+			padding-left: 0
+		.comment-slider
+			width: 700px
+
+	// footer
+	footer
+		height: auto
+		padding-bottom: 20px
+		.foot-left
+			padding-left: 0
+			.tel
+				margin: 10px 0
+			.danger 
+				.copy-text
+					width: 280px
+
+		.foot-mnu
+			margin-right: 20px
+			ul
+				li
+					margin-bottom: 10px
+
+		.social
+			margin-right: 0
+			
+
+/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	// header
+	header 
+		.header-top 
+			.logo
+				width: 355px
+			.container 
+				.left-bg
+					width: 400px
+					height: 314px
+					background-size: cover
+					left: -165px
+
+		.header-main 
+			.header-mnu 
+				ul 
+					li
+						margin-right: 14px
+			.header-search 
+				.search-text
+					width: 560px 
+					p
+						letter-spacing: 1px
+			.products-cats 
+				.product
+					height: 235px
+					&:nth-child(1),
+					&:nth-child(2),
+					&:nth-child(3),
+					&:nth-child(4)
+						width: 25%
+					&:nth-child(5),
+					&:nth-child(6),
+					&:nth-child(7),
+					&:nth-child(8)
+						width: 25%
+						margin-bottom: 20px
+					&:nth-child(9),
+					&:nth-child(10)
+						margin-bottom: 20px
+						width: 50%
+					&:nth-child(5)
+						margin-bottom: 0
+					a 
+						.info-bottom
+							top: 195px
+
+	// footer
+	footer
+		height: auto
+		padding-bottom: 20px
+		.foot-left
+			padding-left: 0
+			.tel
+				margin: 10px 0
+			.danger 
+				.copy-text
+					width: 280px
+
+		.foot-mnu
+			margin-right: 20px
+			ul
+				li
+					margin-bottom: 10px
+
+		.social
+			margin-right: 0
+			
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	// header
+	header 
+		.header-top 
+			margin-bottom: 15px
+			.cart-tel 
+				.tel
+					padding-top: 0
+					button
+						margin-top: 4px
+			.logo
+				width: 310px
+				img
+					width: 200px
+				h1
+					letter-spacing: 1.5px
+					font-size: em(11px)
+				h3
+					letter-spacing: 0px
+					font-size: em(10px)
+			.container 
+				.left-bg
+					width: 300px
+					height: 236px
+					background-size: cover
+					left: -150px
+		.header-main 
+			@include clearfix
+			.header-mnu 
+				@include clearfix
+				position: relative
+				ul
+					display: none
+					padding-left: 0
+					li
+						display: block
+				h2
+					position: static
+					font-size: em(35px)
+					left: 0
+					top: 0
+					letter-spacing: 10px
+					@include transform(rotate(0deg))
+					margin: 0 0 15px
+					padding: 0
+					line-height: 20px
+					width: 100%
+					margin-bottom: 15px
+				.toggle-mnu
+					display: block
+					margin: 0
+					float: right
+					z-index: 20
+					position: relative
+					margin-bottom: 20px
+					position: absolute
+					right: 0
+					top: 4px
 
+			.header-search 
+				.search-text
+					display: none
+				.search-form
+					width: 100%
+					input[type="text"]:focus
+						width: 100% !important
+
+
+			.products-cats 
+				.product
+					height: 235px
+					&:nth-child(1),
+					&:nth-child(2)
+						width: 50%
+					&:nth-child(3),
+					&:nth-child(4)
+						width: 50%
+					&:nth-child(5),
+					&:nth-child(6)
+						width: 50%
+					&:nth-child(7),
+					&:nth-child(8)
+						width: 50%
+					&:nth-child(9),
+					&:nth-child(10)
+						width: 50%
+
+	// section-map
+	.section-map
+		.container
+			background-position: center center
+			background-size: 700px 346px
+
+	// about-ous
+	.about-ous 
+		.container 
+			.title
+				width: 100%
+			.ous-box__bottom
+				padding-top: 7px
+				p
+					margin: 0
+					padding: 0
+			.ous-box 
+				.ous-item 
+					.item-icon
+						margin: 0 auto
+						width: 100% !important
+						height: 90px
+						float: none
+						@include clearfix
+					.item-text
+						background-color: #fff
+						position: relative
+						z-index: 10
+						text-align: center
+						width: 100% !important
+						float: none
+						@include clearfix
+						p
+							font-size: em(17px)
+							line-height: 23px
+							margin: 0
+							padding: 0
+			.what-tu
+				float: none
+				width: 100%
+				margin-bottom: 20px
+				.what-right
+					margin-right: 0
+			.what-tu__right
+				float: none
+				width: 100%
+				.tu-items
+					width: 50%
+
+	// what-need
+	.what-need
+		padding-top: 20px
+		padding-bottom: 20px
+		height: auto
+		background-size: cover
+		.what-need__box
+			padding-left: 0
+	
+	
+	// how-get
+	.how-get 
+		height: auto
+		background-image: none
+		.how-get__title
+			width: 100%
+			height: 300px
+			background-image: url(../img/home/how-get/how-bg.jpg)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+			text-align: center
+			line-height: 30px
+		.how-get__items
+			width: 100%
+			padding-top: 45px
+			height: 300px
+			background-image: url(../img/home/how-get/items-bg.jpg)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+
+	
+	// profitable
+	.profitable
+		height: auto
+		padding-bottom: 20px
+		.profitable-box
+			padding-left: 0
+			.profitable-title
+				width: 100%
+
+	// ready-tu
+	.ready-tu 
+		.ready-title
+			padding-left: 0
+			width: 100%
+		.ready-desc
+			padding-left: 0
+		.ready-important
+			margin-left: 0
+			padding: 0 20px
+			.ready-tel
+				span
+					letter-spacing: 4px
+					font-size: em(40px)
+
+	// six-reasons 
+	.six-reasons 	
+		.reason-title
+			width: 100%
+			background-size: 600px 143px
+			height: 143px
+			p
+				font-size: em(50px)
+
+		.reason-box 
+			.reason-left
+				padding-right: 0
+				width: 100%
+				float: none
+				.left-title 
+					text-align: center
+			.reason-right
+				float: none
+				padding-left: 0
+				width: 100%
+				.right-title 
+					text-align: center
+
+	// comment
+	.comment 
+		height: auto
+		padding-bottom: 20px
+		padding-top: 20px
+		background-image: none
+		.comment-title
+			padding-left: 0
+			padding-top: 50px
+			padding-bottom: 50px
+			width: 100%
+			float: none
+			background-image: url(../img/home/comment/left-bg.jpg)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+			text-align: center
+
+		.comment-slider
+			width: 100%
+			float: none
+			background-image: url(../img/home/comment/right-bg.jpg)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+			padding-left: 15px
+			padding-right: 15px
+			.owl-controls
+				.owl-dots
+					position: absolute
+					right: 20px
+					top: 40px
+					
+			.slid-item
+				width: 100%
+
+	// footer
+	footer
+		height: auto
+		padding-bottom: 10px
+		.foot-left
+			padding-left: 0
+			.tel
+				margin: 10px 0
+			.danger 
+				.copy-text
+					width: 280px
+
+		.foot-mnu
+			margin-right: 0px
+			ul
+				text-align: right
+				li
+					margin-bottom: 10px
+
+		.social
+			width: 200px
+			height: auto
+			margin: 0 auto
+			text-align: center
+			@include clearfix
+			padding-top: 20px
+			.social-box
+				float: left	
+				display: inline-block	
+				a
+					margin-right: 0
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	// header
+	header
+		.header-top
+			.container 
+				.left-bg
+					display: none
+			.logo
+				margin: 0 auto
+			.cart-tel 
+				width: 100%
+				margin: 0
+
+	// section-map
+	.section-map
+		.container
+			background-image: none
+			.form-box
+				margin: 0 auto
+
+	// about-ous
+	.about-ous 
+		.container 
+			.ous-box 
+				.ous-item
+					.item-icon
+						&::after,
+						&::before
+							display: none
+
+					&:nth-child(1),
+					&:nth-child(2)
+						width: 50%
+						margin-bottom: 20px
+					&:nth-child(3),
+					&:nth-child(4)
+						width: 50%
+						margin-bottom: 20px
+					&:nth-child(5)
+						width: 100%
+
+	// how-get
+	.how-get 
+		.how-get__items
+			height: auto
+			padding: 30px 15px
+			.it1
+				width: 49%
+				margin-right: 0
+				margin-bottom: 15px
+				margin-right: 2%
+				&::after
+					display: none
+			.it2
+				width: 49%
+				margin-right: 0
+				margin-bottom: 15px
+				&::after
+					display: none
+			.it3
+				width: 100%
+
+	// six-reasons 
+	.six-reasons 	
+		.reason-title
+			width: 100%
+			background-size: 450px 108px
+			height: 108px
+			p
+				font-size: em(40px)
+	
+	// footer
+	footer
+		height: auto
+		padding-bottom: 10px
+		padding-top: 20px
+		.foot-left
+			padding-left: 0
+			text-align: center
+			padding-top: 0
+			.tel
+				margin: 10px 0
+				padding-left: 0
+			.danger 
+				width: 100%
+				text-align: center
+				.copy
+					display: none
+				.copy-text
+					width: 100%
+					margin: 0 auto
+					p
+						span
+							display: block !important
+							display: inline-block !important
+
+		.foot-mnu
+			margin: 0
+			width: 100%
+			text-align: center
+			ul
+				text-align: center
+				li
+					margin-bottom: 10px
+
+		.social
+			width: 200px
+			height: auto
+			margin: 0 auto
+			text-align: center
+			@include clearfix
+			padding-top: 20px
+			.social-box
+				float: left	
+				display: inline-block	
+				a
+					margin-right: 0				
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width : 580px)
+	// special-offer
+	.special-offer 
+		height: auto
+		padding-bottom: 20px
+		.special-title
+			padding-left: 0
+			padding-bottom: 30px
+			text-align: center
+			span
+				font-size: em(28px)
+				white-space: normal
+		.offers-box 
+			.offer
+				margin-bottom: 40px
+				width: 100%
 
+	// comment
+	.comment
+		.comment-title
+			padding-top: 20px
+			padding-bottom: 20px
+			span
+				font-size: em(18px)
+				display: block
+				line-height: 30px
+		.comment-slider
+			padding-top: 50px
+			.owl-controls
+				.owl-dots
+					position: absolute
+					right: 20px
+					top: 10px
+					.owl-dot
+						margin-bottom: 10px
+				
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 510px)
+	// about-ous
+	.about-ous 
+		.container 
+			.ous-box__bottom 
+				height: auto
+				padding-bottom: 7px
+				padding-left: 10px
+				padding-right: 10px
+				p
+					font-size: em(15px)
+
+	// what-need
+	.what-need 
+		.what-need__box 
+			.need-title
+				width: 100%
+				p
+					font-size: em(32px)
+					line-height: 40px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	// header
+	header
+		.header-top
+			.logo
+				width: 100%
+
+	// section-map
+	.section-map
+		.container
+			background-image: none
+			.form-box
+				width: 100%
+
+	// about-ous
+	.about-ous 
+		.container 
+			.title 
+				span
+					font-size: em(25px)
+			.what-tu
+				height: auto 
+				.what-title 
+					span
+						font-size: em(30px)
+				.what-left
+					width: 90%
+			.ous-box__bottom
+				margin-bottom: 30px
+
+	// profitable
+	.profitable
+		height: auto
+		padding-bottom: 20px
+		padding-top: 20px
+		.profitable-box
+			padding-left: 0
+			.profitable-title
+				width: 100%
+				p
+					font-size: em(30px)
+					line-height: 40px
+
+	// ready-tu
+	.ready-tu
+		padding-top: 35px 
+		.ready-title
+			padding-left: 0
+			width: 100%
+			span
+				font-size: em(30px)
+				line-height: 35px
+		.ready-desc
+			padding-left: 0
+		.ready-important
+			margin-left: 0
+			padding: 0 20px
+			border-right: 8px solid #B6C6E7
+			border-left: 8px solid #B6C6E7
+			.ready-tel
+				span
+					letter-spacing: 2px
+					font-size: em(30px)
+
+	// six-reasons 
+	.six-reasons 
+		padding-top: 20px	
+		.reason-title
+			width: 100%
+			background-size: 450px 108px
+			height: 108px
+			p
+				font-size: em(30px)
+				line-height: 35px
+
+		.reason-box 
+			.reason-left
+				padding-right: 0
+				width: 100%
+				float: none
+				.left-title 
+					text-align: center
+				.left-item
+					height: auto
+					.left-item__text
+						text-align: center
+						float: none
+						width: 280px
+						margin: 0 auto
+						height: auto
+					.left-item__img
+						float: none
+						margin: 0 auto
+			.reason-right
+				float: none
+				padding-left: 0
+				width: 100%
+				.right-title 
+					text-align: center
+				.right-item
+					height: auto
+					.right-item__text
+						text-align: center
+						float: none
+						width: 280px
+						margin: 0 auto
+						height: auto
+					.right-item__img
+						float: none
+						margin: 0 auto
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 460px)
+	// header
+	header
+		.header-main 
+			.products-cats 
+				.product
+					width: 100% !important
+
+	// about-ous
+	.about-ous 
+		.container 
+			.what-tu__right 
+				.tu-items
+					width: 100%
+
+	// how-get
+	.how-get 
+		.how-get__title
+			padding: 30px 15px
+			margin: 0
+			height: auto
+			span
+				display: block
+				font-size: em(20px)
+				line-height: 45px
+		.how-get__items
+			height: auto
+			padding: 30px 15px
+			.it1
+				width: 100%
+				margin-right: 0
+				margin-bottom: 15px
+				float: none
+				&::after
+					display: none
+			.it2
+				width: 100%
+				margin-right: 0
+				margin-bottom: 15px
+				float: none
+				&::after
+					display: none
+			.it3
+				width: 100%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -44,6 +946,14 @@
 @media only screen and (min-width : 768px)
 	/**/
 
+/* Small Devices, Tablets */
+@media only screen and (min-width : 991px)
+	// header
+	header
+		.header-main
+			.header-mnu
+				ul
+					display: block !important
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
