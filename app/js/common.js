@@ -30,6 +30,27 @@ $(function() {
 
 	});
 
+
+	// animate far label + input form-right
+	$('.form-right form input').each(function() {
+		$(this).on('focus', function() {
+			$(this).parent('.css-head').addClass('active');
+		});
+
+		$(this).on('blur', function() {
+			if ($(this).val().length == 0) {
+				$(this).parent('.css-head').removeClass('active');
+			}
+		});
+
+		if ($(this).val() != '') $(this).parent('.css-head').addClass('active');
+
+	});
+
+	$(".show-form").on("click", function(){
+		$(".form-right").toggleClass("form-active");
+	});
+
 	//owlCarousel slider header
 	$(".comment-slider").owlCarousel({
 		items: 1,
