@@ -56,10 +56,10 @@ gulp.task('libs', function() {
 		'app/libs/bootsrap/bootstrap.js',
 		'app/libs/waypoints/waypoints.js',
 		'app/libs/wow/wow.js',
-		'app/libs/pixLayout/jquery.pixlayout.0.9.7.js',
 		'app/libs/image-resizing/imgLiquid-min.js',
 		'app/libs/dotdotdot-master/jquery.dotdotdot.js',
-		'app/libs/owlcarousel/owl.carousel.min.js'
+		'app/libs/owlcarousel/owl.carousel.min.js',
+		'app/libs/jquery-ui/jquery-ui.js'
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
