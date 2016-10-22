@@ -459,10 +459,6 @@
 						padding: 11px 0 0
 						margin: 0
 
-
-
-
-
 // about-ous
 .about-ous
 	padding-top: 30px
@@ -511,7 +507,7 @@
 						width: 1px
 						height: 160px
 						left: 50%
-						bottom: -180px
+						bottom: -170px
 						background-color: #333558
 					span
 						display: block
@@ -534,7 +530,7 @@
 			z-index: 10
 			background-color: #fff
 			height: 98px
-			padding-top: 3px
+			padding-top: 9px
 			margin-bottom: 80px
 			p
 				font-size: em(20px)
@@ -659,20 +655,26 @@
 			p
 				color: #2f323d
 				font-family: $roboregular
-				font-size: em(15px)
+				font-size: em(16px)
+				line-height: 30px
 		.need-list
+			padding-top: 20px
 			span
 				color: $accent2
 				font-size: em(20px)
 				font-family: $robobold
+				letter-spacing: 2px
+
 			ul
 				padding-left: 50px
+				margin-top: 30px
 				li
 					list-style-type: none
-					font-size: em(15px)
+					font-size: em(16px)
 					color: #2f323d
 					position: relative
 					letter-spacing: 1px
+					line-height: 30px
 					&::before
 						content: ''
 						position: absolute
@@ -683,6 +685,7 @@
 						background-image: url(../img/home/what-need/arrow.png)
 						background-repeat: no-repeat
 
+// how-get
 .how-get
 	height: 440px
 	width: 100%
@@ -757,7 +760,8 @@
 				z-index: 10
 		.it3
 			padding-top: 50px
-			
+
+// profitable
 .profitable
 	height: 460px
 	background-image: url(../img/home/vigida/bg.jpg)	
@@ -776,12 +780,14 @@
 		.profitable-list
 			ul
 				padding-left: 50px
+				margin-top: 40px
 				li
 					list-style-type: none
-					font-size: em(15px)
+					font-size: em(16px)
 					color: #2f323d
 					position: relative
 					letter-spacing: 1px
+					line-height: 30px
 					&::before
 						content: ''
 						position: absolute
@@ -792,6 +798,7 @@
 						background-image: url(../img/home/what-need/arrow.png)
 						background-repeat: no-repeat
 
+// special-offer
 .special-offer
 	height: 563px
 	background-image: url(../img/home/special-offer/bg.jpg)
@@ -892,6 +899,7 @@
 		.it4
 			background-color: #DFE9FF
 
+// ready-tu
 .ready-tu
 	padding-top: 55px
 	padding-bottom: 50px
@@ -907,13 +915,13 @@
 			font-family: $roboblack
 	.ready-desc
 		padding-left: 50px
-		margin-bottom: 10px
+		margin-bottom: 15px
 		.b
 			font-family: $robobold
 		p
 			font-family: $roboregular
 			color: #333447
-			font-size: em(15px)
+			font-size: em(16px)
 			span
 				color: #f18661
 				font-size: em(20px)
@@ -923,10 +931,11 @@
 			padding-left: 50px
 			li
 				list-style-type: none
-				font-size: em(15px)
+				font-size: em(16px)
 				color: #2f323d
 				position: relative
 				letter-spacing: 1px
+				line-height: 25px
 				&::before
 					content: ''
 					position: absolute
@@ -962,6 +971,7 @@
 				font-family: $robobold
 				letter-spacing: 7px
 
+// six-reasons
 .six-reasons
 	width: 100%
 	background-color: #E2EBFE
@@ -1019,6 +1029,7 @@
 					color: $accent2
 					font-size: em(25px)
 					font-family: $robobold
+					letter-spacing: 2px
 			.left-item
 				margin-bottom: 30px
 				@include clearfix
@@ -1051,6 +1062,7 @@
 					line-height: 32px	
 					color: $accent
 					font-size: em(25px)
+					letter-spacing: 2px
 					font-family: $robobold
 			.right-item
 				margin-bottom: 30px
@@ -1072,6 +1084,7 @@
 						padding: 0
 						line-height: 23px
 
+// comment
 .comment
 	height: 440px
 	width: 100%
@@ -1170,9 +1183,306 @@
 						opacity: 1
 						@include transform(translate3d(0,0,0))
 
+// cart
+.cart
+	.cart-title
+		span
+			font-size: em(50px)
+			color: $accent
+			font-family: "PlayfairDisplayBlack"
+			text-transform: uppercase
 
+	.cart-box
+		.table-content
+			height: auto
+			table
+				border: 1px solid #E8E8E8
+				width: 100%
+				border: none
+				tbody
+					tr
+						vertical-align: top
+						.product-img
+							border-bottom: 15px solid #DBDCDD
+							width: 222px
+							.product-img__in
+								display: block
+								width: 180px
+								min-height: 180px
+								margin-top: 40px
 
+						.product-name
+							border-bottom: 15px solid #DBDCDD
+							padding-bottom: 30px
+							.product-name__in
+								border-right: 2px solid #F16B3D
+								display: block
+								width: 400px
+								min-height: 180px
+								color: #333447
+								font-size: em(18px)
+								font-family: $roboboldcond
+								letter-spacing: 2px
+								padding-right: 30px
+								padding-top: 10px
+								margin-top: 40px
+								a
+									display: block
+									color: #333447
+									font-size: em(18px)
+									font-family: $roboboldcond
+									line-height: 30px
+									span
+										color: $accent2
+									&:hover,
+									&:link
+										text-decoration: none
+									
+							
+						.product-variant
+							border-bottom: 15px solid #DBDCDD
+							.product-variant__in
+								width: 165px
+								padding-top: 10px
+								margin-top: 40px
+								a
+									color: #333447
+									font-size: em(20px)
+									font-family: $roboboldcond
+									line-height: 30px
+									font-family: "PlayfairDisplayBold"
+									letter-spacing: 3px
+									span
+										color: $accent
+										text-transform: uppercase
+										margin-left: 10px
+									&:hover,
+									&:link
+										text-decoration: none
 
+							
+						.product-update
+							border-bottom: 15px solid #DBDCDD
+							.product-update__in
+								width: 70px
+								min-height: 180px
+								padding-top: 10px
+								padding-left: 15px
+								margin-top: 40px
+								border-right: 2px solid #F16B3D
+								a
+									display: block
+									display: inline-block
+									width: 25px
+									height: 25px
+									background-color: #333447
+									text-align: center
+									i
+										color: #fff
+										line-height: 25px
+										@include transition(all .5s ease)
+									&:hover
+										i
+											color: $accent
+											@include transform(rotate(180deg))
+
+						.product-price
+							border-bottom: 15px solid #DBDCDD
+							.product-price__in
+								margin-top: 40px
+								width: 280px
+								padding-left: 15px
+								padding-top: 5px
+								span
+									font-size: em(30px)
+									color: #333447
+									font-family: $roboboldcond
+						.product-dell
+							border-bottom: 15px solid #DBDCDD
+							padding-top: 10px
+							.dell
+								height: 25px
+								width: 25px
+								position: relative
+								box-sizing: border-box
+								line-height: 25px
+								display: inline-block
+								background-color: #333447
+								margin-top: 40px
+								&::before,
+								&::after
+									transform: rotate(-45deg)
+									content: ''
+									position: absolute
+									display: block
+									height: 3px
+									width: 19px
+									background-color: #fff
+									transition: all 0.2s ease-out
+									top: 11px
+									left: 3px
+								&::after
+									transform: rotate(45deg)
+								&:hover
+									&::before,
+									&::after
+										transform: rotate(180deg)
+										background-color: #F1845F
+						.held
+							background-color: #DBDCDD
+							height: 75px
+							.total
+								width: 165px
+								padding-top: 10px
+								span
+									font-size: em(22px)
+									color: #000
+									font-family: $roboboldcond !important
+									letter-spacing: 3px
+									text-transform: uppercase
+							.total-price
+								width: 280px
+								padding-left: 17px
+								padding-top: 10px
+								span
+									font-size: em(30px)
+									color: #000
+									font-family: $roboboldcond !important
+									letter-spacing: 3px
+		.buy-form
+			width: 100%
+			height: 360px
+			background-image: url(../img/cart/form-bg.jpg)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+			padding-top: 40px
+			@include clearfix
+			.buy-form__in
+				width: 660px
+				margin: 0 auto
+				@include clearfix
+				.buy-form__left
+					float: left
+					width: 285px
+					.css-buy
+						display: block
+						position: relative
+						margin: 0
+						input
+							transition: .1s all linear
+							width: 100%
+							margin-bottom: 18.3px
+							height: 41px
+							line-height: 41px
+							background-color: transparent
+							border: none
+							border-bottom: 1px solid #E2EBFE
+							outline: none
+							padding: 0 15px
+							color: #fff
+						label
+							position: absolute
+							top: 13px
+							left: 15px
+							color: #aaa
+							transition: .1s all linear
+							cursor: text
+							color: #BCCAE7
+							font-family: $roboregular
+							text-transform: uppercase
+							font-size: em(10px)
+							letter-spacing: 4px
+				.buy-form__left	
+					.css-buy.active-buy
+						label
+							top: -14px
+						input
+							border-right: 1px solid #E2EBFE
+							border-left: 1px solid #E2EBFE
+							border-top: 1px solid #E2EBFE
+				.buy-form__right
+					float: right
+					width: 285px
+					.css-buy
+						display: block
+						position: relative
+						margin: 0
+						textarea
+							transition: .1s all linear
+							width: 100%
+							height: 160px
+							background-color: transparent
+							border: none
+							border-bottom: 1px solid #E2EBFE
+							outline: none
+							padding: 0 15px
+							color: #fff
+							resize: none
+						label
+							position: absolute
+							top: 13px
+							left: 15px
+							color: #aaa
+							transition: .1s all linear
+							cursor: text
+							color: #BCCAE7
+							font-family: $roboregular
+							text-transform: uppercase
+							font-size: em(10px)
+							letter-spacing: 4px
+				.buy-form__right
+					.css-buy.active-buy 
+						label
+							top: -14px
+						textarea
+							border-right: 1px solid #E2EBFE
+							border-left: 1px solid #E2EBFE
+							border-top: 1px solid #E2EBFE
+				.two-button
+					@include clearfix
+					width: 400px
+					margin: 0 auto
+					text-align: center
+					padding-top: 20px
+					button
+						display: block
+						margin-bottom: 20px
+						width: 100%
+						height: 50px
+						line-height: 50px
+						background-color: #F1845F
+						color: #393c47
+						font-size: em(12px)
+						text-transform: uppercase
+						letter-spacing: 9px
+						border-radius: 30px
+						border: none
+						font-family: $roboblack
+						@include transition(all .5s)
+						&:hover
+							border-radius: 0
+							color: #fff
+					a
+						display: block
+						display: inline-block
+						color: #f1845f
+						font-size: em(12px)
+						text-transform: uppercase
+						letter-spacing: 3px
+						font-family: $roboregular
+						position: relative
+						&:after
+							position: absolute
+							left: 0px
+							bottom: -1px
+							content: ''
+							height: 1px
+							width: 100%
+							background-color: #f1845f
+						&:hover,
+						&:link
+							text-decoration: none
 
 
 
@@ -1321,8 +1631,5 @@ footer
 				a
 					&:nth-child(1)
 						margin-right: 6px
-
-
-
 
 @import "media"

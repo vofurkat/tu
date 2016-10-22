@@ -293,6 +293,64 @@
 		.comment-slider
 			width: 700px
 
+	// cart
+	.cart 
+		.cart-box
+			.table-content 
+				table tbody 
+					tr 
+						.product-name 
+							.product-name__in
+								width: 300px
+								padding-left: 20px
+						.product-variant 
+							.product-variant__in
+								padding-left: 20px
+								width: 150px
+						.product-price 
+							.product-price__in
+								width: 150px
+						.held
+							.total
+								padding-left: 20px 
+							.total-price
+								width: 200px
+	// reviews
+	header 
+		.header-reiviews 
+			.reviews 
+				.catalog-box
+					width: 220px
+					margin-left: 15px
+					padding: 10px
+					.catalog-title::after
+						display: none	
+					.catalog-item
+						height: 200px
+						width: 200px
+						a 
+							.info-bottom
+								top: 105px
+
+				.reviews-box
+					.reviews-title
+						padding-right: 190px
+						span
+							letter-spacing: 5px
+					.reviews-item 
+						.reviews-content
+							padding-right: 20px
+							padding-left: 20px
+							padding-top: 5px
+							background-position: 20px 45px
+						.reviews-img 
+							margin-left: -3px !important
+							.reviews-img__box
+								width: 170px
+								height: 170px
+								padding: 5px !important
+
+
 	// footer
 	footer
 		height: auto
@@ -776,6 +834,51 @@
 			.slid-item
 				width: 100%
 
+	// reviews
+	header 
+		.header-reiviews 
+			.reviews 
+				.catalog-box
+					width: 100%
+					margin-left: 0px
+					padding: 15px
+					@include clearfix
+					.catalog-title::after
+						display: none	
+					.catalog-item
+						height: 250px
+						width: 50%
+						float: left
+						a 
+							.info-bottom
+								top: 155px
+
+				.reviews-box
+					.reviews-title
+						padding: 0px
+						text-align: center
+						span
+							letter-spacing: 5px
+					.reviews-item 
+						.reviews-content
+							padding-right: 20px
+							padding-left: 20px
+							padding-top: 5px
+							background-image: none
+							text-align: center
+								
+						.reviews-img 
+							margin-left: 0px !important
+							width: 100%
+							background-image: none
+							padding-bottom: 20px
+							.reviews-img__box
+								width: 250px
+								height: 250px
+								padding: 10px !important
+								margin: 0 auto
+
+
 	// footer
 	footer
 		height: auto
@@ -902,6 +1005,32 @@
 			height: 108px
 			p
 				font-size: em(40px)
+
+	// cart
+	.cart 
+		.cart-box 
+			.buy-form
+				height: auto
+				padding-bottom: 20px
+				.buy-form__in 
+					width: 100%
+					.buy-form__left
+						float: none
+						margin: 0 auto
+					.buy-form__right
+						float: none
+						margin: 0 auto
+						.css-buy 
+							textarea
+								height: 100px
+					.two-button
+						width: 285px
+						margin: 0 auto
+						button
+							height: 40px
+							line-height: 40px
+							letter-spacing: 5px
+
 	
 	// footer
 	footer
@@ -1237,6 +1366,54 @@
 					.right-item__img
 						float: none
 						margin: 0 auto
+
+	.cart .cart-box .buy-form .buy-form__in .buy-form__right,
+	.cart .cart-box .buy-form .buy-form__in .buy-form__left,
+	.cart .cart-box .buy-form .buy-form__in .two-button
+		width: 260px
+
+	// reviews
+	header 
+		.header-reiviews 
+			.reviews 
+				.catalog-box
+					width: 100%
+					padding: 15px
+					@include clearfix
+					.catalog-title::after
+						display: none	
+					.catalog-item
+						height: 250px
+						width: 100%
+						float: none
+						a 
+							.info-bottom
+								top: 155px
+
+				.reviews-box
+					.reviews-title
+						padding: 0px
+						text-align: center
+						span
+							letter-spacing: 5px
+					.reviews-item 
+						.reviews-content
+							padding-right: 20px
+							padding-left: 20px
+							padding-top: 5px
+							background-image: none
+							text-align: center
+								
+						.reviews-img 
+							margin-left: 0px !important
+							width: 100%
+							background-image: none
+							padding-bottom: 20px
+							.reviews-img__box
+								width: 250px
+								height: 250px
+								padding: 10px !important
+								margin: 0 auto
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 460px)

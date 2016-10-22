@@ -10,6 +10,9 @@ $(function() {
 	// product img resize
 	$('.products-cats .product').imgLiquid();
 	$('.product-info .product-info__img').imgLiquid();
+	$('.cart-box .product-img .product-img__in').imgLiquid();
+	$('.reviews .catalog-box .catalog-item').imgLiquid();
+	$('.reviews .reviews-img .reviews-img__box .comm-img').imgLiquid();
 
 	// open mobil menu
 	$(".toggle-mnu").click(function() {
@@ -65,6 +68,38 @@ $(function() {
 		});
 
 		if ($(this).val() != '') $(this).parent('.css-blue').addClass('active-blue');
+
+	});
+
+	// animate far label + input cart page
+	$('.buy-form .buy-form__in .buy-form__left input').each(function() {
+		$(this).on('focus', function() {
+			$(this).parent('.css-buy').addClass('active-buy');
+		});
+
+		$(this).on('blur', function() {
+			if ($(this).val().length == 0) {
+				$(this).parent('.css-buy').removeClass('active-buy');
+			}
+		});
+
+		if ($(this).val() != '') $(this).parent('.css-buy').addClass('active-buy');
+
+	});
+
+	// animate far label + input cart page
+	$('.buy-form .buy-form__in .buy-form__right textarea').each(function() {
+		$(this).on('focus', function() {
+			$(this).parent('.css-buy').addClass('active-buy');
+		});
+
+		$(this).on('blur', function() {
+			if ($(this).val().length == 0) {
+				$(this).parent('.css-buy').removeClass('active-buy');
+			}
+		});
+
+		if ($(this).val() != '') $(this).parent('.css-buy').addClass('active-buy');
 
 	});
 
