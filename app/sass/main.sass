@@ -1487,6 +1487,913 @@
 
 
 
+// cart
+.catalog
+	padding-bottom: 10px
+	.more-less
+		display: block
+		display: inline-block
+		text-align: center
+		height: 35px
+		background-color: #333447
+		color: #fff
+		text-transform: uppercase
+		font-size: em(14px)
+		letter-spacing: 2px
+		line-height: 35px
+		font-family: $roboboldcond
+		&:hover,
+		&:link
+			text-decoration: none
+	.more-less.more-show
+		background-image: url(../img/catalog/pluss.jpg)
+		background-repeat: no-repeat
+		background-position: 695px 11px
+		margin-top: 10px
+	.more-less.less-show
+		background-image: url(../img/catalog/minus.jpg)
+		background-repeat: no-repeat
+		background-position: 675px 11px
+		margin-top: 0
+	.catalog-total
+		position: relative
+		margin-bottom: 80px
+		.catalog-total__num
+			position: absolute
+			right: 0
+			bottom: -5px
+			height: 45px
+			min-width: 124px
+			border-top: 5px solid #F1845F
+			border-bottom: 5px solid #F1845F
+			text-align: center
+			padding-top: 5px
+			p
+				margin: 0
+				padding: 0
+				color: #fff
+				font-family: "PlayfairDisplayBold"
+				font-size: em(15px)
+				letter-spacing: 2px
+				span
+					color: #F1845F
+					font-size: 16px
+	.less-show + .catalog-total__num
+		display: none	
+
+	.catalog-title
+		margin-bottom: 20px
+		span
+			font-size: em(55px)
+			letter-spacing: 5px
+			color: #F1845F	
+			font-family: "PlayfairDisplayBlack"
+			text-transform: uppercase
+
+	.catalog-box
+		@include clearfix
+		position: relative
+		.catalog-less
+			position: absolute
+			bottom: 0px
+			left: 0
+			width: 100%
+			height: 35px
+			background-color: #333447
+		.catalog-left
+			float: left
+			width: 250px
+			.catalog-img
+				width: 100%
+				height: 250px
+
+			
+		.catalog-right
+			float: right
+			width: 1000px
+			padding-left: 44px
+			.catalog-right__title
+				padding-bottom: 30px
+				padding-right: 30px
+				span
+					display: block
+					font-family: $robobold
+					font-size: em(25px)
+					line-height: 27px
+					text-transform: uppercase
+					color: $textc
+					margin-bottom: 15px
+				p
+					margin: 0
+					padding: 0
+					font-family: $robocond
+					color: $textc
+					font-size: em(20px)
+					line-height: 27px
+			.catalog-right__box
+				@include clearfix
+				.catalog-right__box-left
+					float: left
+					width: 220px
+					.catalog-name-caost
+						p
+							margin: 0
+							padding: 0
+							font-family: $roboboldcond
+							color: $textc
+							font-size: em(20px)
+							line-height: 30px
+							text-transform: uppercase
+							letter-spacing: .5px
+						span
+							margin: 0
+							padding: 0
+							font-family: $roboboldcond
+							color: $accent
+							font-size: em(25px)
+							text-transform: uppercase
+							letter-spacing: 1px
+
+				.catalog-right__box-right
+					float: right
+					width: 730px
+					position: relative
+					
+					.arrow-bottom
+						position: absolute
+						left: 0
+						top: 10px
+						.arrow-bottom__in
+							position: relative
+							height: 110px
+							width: 2px
+							background-color: $accent
+							&::after
+								content: ''
+								position: absolute
+								bottom: -14px
+								left: -8px
+								width: 18px
+								height: 14px
+								background-image: url(../img/catalog/arrow-bottom.png)
+								background-repeat: no-repeat
+								background-position: center center
+					.arrow-top
+						top: 25px
+						height: 100%
+						width: 2px
+						background-color: $accent
+						.arrow-bottom__in
+							position: relative
+							&::after
+								content: ''
+								position: absolute
+								top: -14px
+								left: -8px
+								width: 18px
+								height: 14px
+								background-image: url(../img/catalog/arrow.png)
+								background-repeat: no-repeat
+								background-position: center center
+
+					ul
+						margin: 0
+						padding: 0 0 0 20px
+						position: relative
+						li
+							list-style-type: none
+							font-size: em(20px)
+							font-family: $roboboldcond
+							color: $textc
+							line-height: 30px
+							letter-spacing: .8px
+							span
+								color: $accent2
+								margin-right: 10px
+			
+		.catalog-bottom
+			height: 240px
+			background-image: url(../img/catalog/form-bg.jpg)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+			@include clearfix
+			position: relative
+			z-index: 9
+			.catalog-bottom__left
+				float: left
+				width: 520px
+				padding-left: 74px
+				padding-top: 63px
+				span
+					display: block
+					line-height: 30px
+					font-size: em(42px)
+					text-transform: uppercase
+					font-family: "PlayfairDisplayBold"
+					color: #fff
+					letter-spacing: 3px
+			.catalog-bottom__right
+				float: right
+				width: 730px
+				padding-top: 35px
+				padding-left: 35px	
+				padding-right: 35px
+				position: relative
+				&::before
+					position: absolute
+					content: ''
+					left: 0
+					top: 0
+					height: 90%
+					width: 2px
+					background-color: $accent
+				.catalog-form__left
+					float: left
+					width: 285px
+					.css-catalog
+						display: block
+						position: relative
+						margin: 0
+						input
+							transition: .1s all linear
+							width: 100%
+							margin-bottom: 18.3px
+							height: 41px
+							line-height: 41px
+							background-color: transparent
+							border: none
+							border-bottom: 1px solid #E2EBFE
+							outline: none
+							padding: 0 15px
+							color: #fff
+						label
+							position: absolute
+							top: 13px
+							left: 15px
+							color: #aaa
+							transition: .1s all linear
+							cursor: text
+							color: #BCCAE7
+							font-family: $roboregular
+							text-transform: uppercase
+							font-size: em(10px)
+							letter-spacing: 4px
+				.catalog-form__left	
+					.css-catalog.active-catalog
+						label
+							top: -14px
+						input
+							border-right: 1px solid #E2EBFE
+							border-left: 1px solid #E2EBFE
+							border-top: 1px solid #E2EBFE
+				.catalog-form__right
+					float: right
+					width: 285px
+					.css-catalog
+						display: block
+						position: relative
+						margin: 0
+						input
+							transition: .1s all linear
+							width: 100%
+							margin-bottom: 18.3px
+							height: 41px
+							line-height: 41px
+							background-color: transparent
+							border: none
+							border-bottom: 1px solid #E2EBFE
+							outline: none
+							padding: 0 15px
+							color: #fff
+						label
+							position: absolute
+							top: 13px
+							left: 15px
+							color: #aaa
+							transition: .1s all linear
+							cursor: text
+							color: #BCCAE7
+							font-family: $roboregular
+							text-transform: uppercase
+							font-size: em(10px)
+							letter-spacing: 4px
+				.catalog-form__right
+					.css-catalog.active-catalog 
+						label
+							top: -14px
+						textarea
+							border-right: 1px solid #E2EBFE
+							border-left: 1px solid #E2EBFE
+							border-top: 1px solid #E2EBFE
+				.catalog-button
+					width: 400px
+					margin: 0 auto
+					text-align: center
+					padding-top: 20px
+					button
+						display: block
+						width: 100%
+						height: 50px
+						line-height: 50px
+						background-color: #F1845F
+						color: #393c47
+						font-size: em(12px)
+						text-transform: uppercase
+						letter-spacing: 9px
+						border-radius: 30px
+						border: none
+						font-family: $roboblack
+						@include transition(all .5s)
+						&:hover
+							border-radius: 0
+							color: #fff
+
+.catalog-special
+	border-bottom: 1px solid #E2EBFE
+	@include clearfix
+	.catalog-special__title	
+		padding-bottom: 50px
+		span
+			color: #f1845f
+			font-size: em(40px)
+			text-transform: uppercase
+			line-height: 30px
+			font-family: "PlayfairDisplayBold"
+			letter-spacing: 1px
+
+	.spe-slider__box
+		width: 500px
+		float: left
+		position: relative
+		.owl-controls
+			.owl-dots
+				position: absolute
+				right: 15px
+				top: 15px
+				.owl-dot
+					width: 10px
+					height: 10px
+					margin-bottom: 20px
+					background-color: #f1845f
+					border-radius: 50%
+					position: relative
+					&::before
+						content: ''
+						width: 18px
+						height: 18px
+						border: 1px solid #f1845f
+						border-radius: 50%
+						position: absolute
+						opacity: 0
+						top: -4px
+						left: -4px
+						@include transition(all .5s ease)
+					&.active
+						width: 10px
+						height: 10px
+						background-color:  #fff
+					&:hover
+						background-color: #fff
+						&::before
+							opacity: 1
+
+		
+		.spe-slider__item
+			width: 100%
+			height: 500px
+			padding: 35px 50px
+			.spe-title
+				p
+					font-size: em(35px)
+					color: #f1845f
+					font-family: $robobold
+					line-height: 60px
+					margin: 0
+					padding: 0
+			.spe-cost
+				padding: 20px 0
+				span
+					color: #666afe
+					font-size: em(60px)
+					line-height: 60px
+					font-family: $robothin
+			.spe-desc
+				margin: 0
+				padding: 0
+				padding-left: 10px
+				position: relative
+				&::before
+					content: ''
+					width: 5px
+					height: 85%
+					position: absolute
+					left: 0
+					top: 10px
+					background-color: #F1845F
+				p
+					color: #fff
+					font-family: $roboregular
+					font-size: em(16px)
+					line-height: 30px
+					margin: 0
+					padding: 0
+					letter-spacing: .5px
+
+	.catalog-special__cont
+		float: right
+		width: 750px
+		.cont-top
+			padding: 20px 60px
+			margin-bottom: 28px
+			span
+				display: block
+				color: $textc
+				text-transform: uppercase
+				font-family: "RobotoBoldCondensed"
+				font-size: em(25px)
+				font-size: 30px
+				margin-bottom: 20px
+				letter-spacing: 1px
+			p
+				margin: 0
+				padding: 0
+				font-size: em(20px)
+				font-family: $robobold
+				line-height: 30px
+		.cont-bottom
+			.cont-bottom__item
+				float: left
+				width: 250px
+				height: 250px
+				background-color: #F0F0F0
+				@include transition(all .5s ease)
+				a
+					display: block
+					width: 100%
+					height: 100%
+					position: relative
+					.cont-item__in
+						position: absolute
+						left: 50%
+						top: 50%
+						@include transform(translate(-50%, -50%))
+						min-width: 195px
+						span
+							color: #f1845f
+							font-size: em(30px)
+							font-family: $roboboldcond
+							@include transition(all .5s ease)
+						p
+							color: $textc
+							font-family: $roboboldcond
+							font-size: em(16px)
+							line-height: 25px
+							letter-spacing: 1px
+							margin: 0
+							padding: 0
+							@include transition(all .5s ease)
+				&:hover
+					background-color: #4348EE
+					.cont-item__in
+						span
+							font-size: em(60px)
+							line-height: 40px
+						p
+							color: #fff
+
+	.spe-bottom
+		margin-top: 60px
+		padding-bottom: 30px
+		.spe-title
+			margin-bottom: 20px
+			span
+				display: block
+				line-height: 45px
+				color: #333447
+				font-size: em(30px)
+				text-transform: uppercase
+				font-family: $roboboldcond
+				letter-spacing: 1px
+		.spe-desc
+			margin-bottom: 15px
+			padding-right: 90px
+			.b
+				font-family: $robobold
+			p
+				font-family: $roboregular
+				color: #333447
+				font-size: em(18px)
+				line-height: 24px
+				
+			ul
+				padding-left: 50px
+				li
+					list-style-type: none
+					font-size: em(16px)
+					color: #2f323d
+					position: relative
+					letter-spacing: 1px
+					line-height: 25px
+					&::before
+						content: ''
+						position: absolute
+						left: -50px
+						top: 13px
+						height: 3px
+						width: 20px
+						background-image: url(../img/home/what-need/arrow-red.png)
+						background-repeat: no-repeat
+
+// xassp
+.section-one
+	height: 570px
+	width: 100%
+	background-image: url(../img/xassp/bg1.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	position: relative
+	margin-top: -200px
+	a
+		display: block
+		width: 100%
+		height: 100%
+		&:hover,
+		&:link
+			text-decoration: none
+		.section-one__title
+			padding-left: 50px
+			padding-top: 70px
+			margin-bottom: 90px
+			p
+				font-size: em(60px)
+				text-transform: uppercase
+				font-family: "PlayfairDisplayBlack"
+				color: #fff
+				letter-spacing: 5px
+				padding: 0
+				margin: 0
+				span
+					font-size: em(23px)
+					margin-left: 15px
+		.section-one__desc
+			padding-left: 50px
+			p
+				position: relative
+				font-size: em(30px)
+				font-family: $roboblack
+				color: #fff
+				text-transform: uppercase
+				margin: 0
+				padding: 0 0 0 40px
+				letter-spacing: 3px
+				line-height: 48px
+				&::before
+					content: ''
+					position: absolute
+					left: 0
+					top: 13px
+					width: 10px
+					height: 85%
+					background-color: #E97047
+		
+
+.section-two
+	padding: 80px 0 80px
+	.what-tu
+		background-color: #2F323D
+		width: 500px
+		height: 500px
+		float: left
+		padding-left: 53px
+		padding-top: 34px
+		padding-bottom: 25px
+		.what-title
+			margin-bottom: 50px
+			p
+				color: #f1845f
+				font-size: em(35px)
+				font-family: $robobold
+				margin: 0
+				padding: 0
+				letter-spacing: 1px
+				line-height: 60px
+		
+	.what-tu__right
+		float: right
+		width: 750px
+		.tu-items
+			float: left
+			width: 250px
+			height: 250px
+			padding: 70px 60px 0 23px
+			span
+				display: block
+				color: #f1845f
+				font-size: em(48px)
+				font-family: $roboboldcond
+				line-height: 30px
+			p
+				color: #2f323d
+				font-size: em(19px)
+				font-family: $roboboldcond
+				margin: 0
+				padding: 0
+				line-height: 25px
+
+		.it1
+			background-color: #DFE9FF
+		.it3
+			background-color: #4C5266
+			p
+				color: #fff
+		.it4
+			background-color: #F0F0F0
+			padding-right: 90px
+			width: 100%
+
+.section-four
+	padding: 60px 0 120px 
+	overflow: hidden
+	.container
+		.title
+			text-align: center
+			width: 750px
+			height: 90px
+			background-color: #fff
+			margin: 0 auto 40px
+			position: relative
+			z-index: 10
+			padding-top: 16px
+			span
+				color: #333447
+				text-transform: uppercase
+				font-size: em(35px)
+				font-family: $roboregular
+	.ous-box
+		@include clearfix
+		padding: 0 10px 0 40px
+		.ous-item
+			float: left
+			width: 20%
+			position: relative
+			// .item-tool
+			// 	position: absolute
+			// 	left: -30px
+			// 	top: 130%
+			// 	width: 250px
+			// 	height: 170px
+			// 	border: 10px solid #B6C6E7
+			// 	background-color: #fff
+			// 	padding: 10px 0 0 20px
+			// 	z-index: 10
+			// 	p
+			// 		margin: 0
+			// 		padding: 0
+			// 		font-family: $roboregular
+			// 		font-size: 15px
+			// 		line-height: 30px
+			// 		color: $textc
+			&:nth-child(3)
+				.item-icon
+					width: 65px
+			.item-icon
+				text-align: center
+				float: left
+				width: 40px
+				margin-right: 20px
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					width: 1px
+					height: 200px
+					left: 50%
+					top: -210px
+					background-color: #333558
+				&::after
+					content: ''
+					position: absolute
+					width: 1px
+					height: 90px
+					left: 50%
+					bottom: -120px
+					background-color: #333558
+				span
+					display: block
+					font-size: em(24px)
+					color: #f16b3d
+					font-family: $robobold
+				
+			.item-text	
+				width: 110px
+				float: left
+				p
+					font-size: em(18px)
+					color: #333447
+					font-family: $roboregular
+
+
+.section-five
+	height: 768px
+	width: 100%
+	.five-left
+		float: left
+		width: 40%
+		height: auto
+		background-image: url(../img/xassp/five-left-bg.jpg)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		height: inherit
+		.five-left__in
+			width: 330px
+			padding-top: 30px
+			margin-left: auto
+			padding-right: 40px
+			p
+				font-size: 20px	
+				text-transform: uppercase
+				color: #fff
+				font-family: $robobold
+				letter-spacing: 9px
+				line-height: 70px
+	.five-right
+		float: right
+		width: 60%
+		background-image: url(../img/xassp/five-right-bg.jpg)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		height: inherit
+		.five-right__in
+			padding: 70px 0px 0 140px
+			max-width: 865px
+			ul
+				margin: 0
+				padding: 0
+				li
+					list-style-type: none
+					font-size: 18px
+					color: #fff
+					font-family: $roboregular
+					line-height: 30px
+					margin-bottom: 60px
+					position: relative
+					&::before
+						width: 49px
+						height: 41px
+						position: absolute
+						left: -50px
+						top: 50%
+						margin-top: -20.5px
+						content: ''
+						background-image: url(../img/xassp/check.png)
+						background-repeat: no-repeat
+						background-position: center center
+						z-index: 5
+					span
+						display: block
+						display: inline-block
+						position: absolute
+						left: -30px
+						top: 50%
+						width: 70px
+						height: 70px
+						margin-top: -35px
+						border: 1px solid $accent2
+
+.section-six
+	height: 610px
+	width: 100%
+	background-image: url(../img/xassp/bg3.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	padding-top: 80px
+	padding-bottom: 60px
+	.six-title
+		padding-left: 80px
+		padding-bottom: 80px
+		span
+			font-size: 35px
+			font-family: $roboblack
+			text-transform: uppercase
+			color: #f16b3d
+	.six-item__box
+		padding: 0 50px
+		.six-item
+			float: left
+			width: 20%
+			text-align: center
+			&:last-child
+				.six-img
+					&::after
+						display: none
+			.six-img
+				height: 132px
+				display: flex
+				align-items: center
+				justify-content: center
+				position: relative
+				&::after
+					position: absolute
+					content: ''
+					right: -30px
+					top: 50%
+					width: 56px
+					height: 29px
+					margin-top: -14.5px
+					background-image: url(../img/xassp/poryad/arrow.png)
+					background-size: 30px 16px
+					background-repeat: no-repeat
+
+				img
+					align-self: flex-end
+			.six-text
+				padding-top: 50px
+				p
+					color: $textc
+					font-size: 14px
+					font-family: $robobold
+					margin: 0
+					padding: 0
+					letter-spacing: 3px
+					text-transform: uppercase
+					line-height: 23px
+
+
+.section-seven
+	height: 460px
+	width: 100%
+	.seven-left
+		float: left
+		width: 40%
+		height: auto
+		background-image: url(../img/xassp/seven-left-bg.jpg)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		height: inherit
+		.seven-left__in
+			width: 330px
+			padding-top: 30px
+			margin-left: auto
+			padding-right: 40px
+			p
+				font-size: 20px	
+				text-transform: uppercase
+				color: #fff
+				font-family: $robobold
+				letter-spacing: 9px
+				line-height: 55px
+	.seven-right
+		float: right
+		width: 60%
+		background-image: url(../img/xassp/seven-right-bg.jpg)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		height: inherit
+		.seven-right__in
+			padding: 70px 0px 0 140px
+			max-width: 865px
+			ul
+				margin: 0
+				padding: 0
+				li
+					list-style-type: none
+					font-size: 18px
+					color: #f1845f
+					font-family: $roboregular
+					line-height: 30px
+					margin-bottom: 60px
+					position: relative
+					&::before
+						width: 49px
+						height: 41px
+						position: absolute
+						left: -50px
+						top: 50%
+						margin-top: -20.5px
+						content: ''
+						background-image: url(../img/xassp/check2.png)
+						background-repeat: no-repeat
+						background-position: center center
+						z-index: 5
+					span
+						display: block
+						display: inline-block
+						position: absolute
+						left: -30px
+						top: 50%
+						width: 70px
+						height: 70px
+						margin-top: -35px
+						border: 1px solid #fff
+
+
 
 
 

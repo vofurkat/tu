@@ -65,7 +65,7 @@
 						margin-bottom: 0
 					a 
 						.info-bottom
-							top: 195px
+							top: 195px 
 	// .product-info
 	.product-info 
 		.product-info__img
@@ -350,6 +350,135 @@
 								height: 170px
 								padding: 5px !important
 
+	// catalog
+	.catalog
+		.more-less.more-show 
+			background-position: 548px 11px
+		.more-less.less-show
+			background-position: 521px 11px
+		.catalog-box 
+			.catalog-left
+				width: 200px
+				.catalog-img
+					height: 200px
+			.catalog-right
+				width: 740px
+				padding-left: 15px
+				.catalog-right__box 
+					.catalog-right__box-left
+						width: 200px
+					.catalog-right__box-right
+						width: 525px
+						.arrow-bottom 
+							.arrow-bottom__in
+								height: 88px
+
+			.catalog-bottom 
+				height: auto
+				.catalog-bottom__left
+					width: 350px
+				.catalog-bottom__right
+					width: 525px
+					.catalog-form__left
+						width: 100%
+					.catalog-form__right
+						width: 100%
+					.catalog-button
+						padding-top: 5px
+						width: 100%
+						button
+							height: 40px
+							line-height: 40px
+
+	// catalog-special
+	.catalog-special 
+		.spe-slider__box
+			width: 400px
+			.spe-slider__item
+				height: 400px
+				padding: 25px 20px
+
+		.catalog-special__cont
+			width: 540px
+			.cont-top
+				padding: 10px 20px 10px
+				margin-bottom: 0
+				span
+					display: block
+					color: $textc
+					text-transform: uppercase
+					font-family: "RobotoBoldCondensed"
+					font-size: em(20px)
+					font-size: 35px
+					margin-bottom: 0px
+					letter-spacing: 1px
+				p
+					margin: 0
+					padding: 0
+					font-size: em(18px)
+					font-family: $robobold
+					line-height: 25px
+			.cont-bottom
+				.cont-bottom__item
+					width: 180px
+					height: 180px
+					.cont-item__in
+						min-width: 135px
+
+	.catalog-special .catalog-special__cont .cont-top span
+		font-size: em(30px)
+		margin-bottom: 10px
+
+	.catalog-special .catalog-special__cont .cont-top p
+		margin-bottom: 15px
+
+	.catalog-special .catalog-special__cont .cont-bottom .cont-bottom__item a .cont-item__in
+		min-width: 145px
+
+	// section-two
+	.section-two 	
+		.what-tu__right
+			width: 440px
+			.it1
+				width: 50%
+				padding-right: 10px
+				padding-top: 20px
+			.it2
+				width: 50%
+				padding-right: 10px
+				padding-top: 20px
+			.it3
+				width: 50%
+				padding-right: 10px
+				padding-top: 20px
+			.it4
+				padding-right: 10px
+				padding-top: 20px
+				width: 50%
+				overflow: hidden
+
+	// section-four
+	.section-four 
+		.ous-box 
+			.ous-item
+				&:nth-child(3) 
+					.item-text
+						width: 90px
+
+	// section-six
+	.section-six 
+		.six-item__box 
+			.six-item 
+				.six-img::after
+					width: 30px
+					height: 16px
+					background-size: cover
+					right: -10px
+					margin-top: -8px
+				.six-text
+					p
+						letter-spacing: 1px
+
 
 	// footer
 	footer
@@ -481,6 +610,12 @@
 					padding-left: 0
 					li
 						display: block
+						margin-bottom: 8px
+						a
+							&::before
+								bottom: -7px
+							&::after
+								bottom: -9px
 				h2
 					position: static
 					font-size: em(35px)
@@ -877,6 +1012,203 @@
 								height: 250px
 								padding: 10px !important
 								margin: 0 auto
+	
+	// catalog
+	.catalog
+		.more-less.more-show 
+			background-position: 438px 11px
+		.more-less.less-show
+			background-position: 411px 11px
+			margin-top: 0
+		.catalog-box
+			height: auto 
+			.catalog-left
+				width: 100%
+				float: none
+				margin-bottom: 14px
+				.catalog-img
+					height: 230px
+			.catalog-right
+				width: 100%
+				padding-left: 0px
+				.catalog-right__box 
+					.catalog-right__box-left
+						width: 100%
+						float: none
+						margin-bottom: 20px
+					.catalog-right__box-right
+						width: 100%
+						float: none
+						padding-left: 10px
+						.arrow-bottom
+							left: 10px 
+							.arrow-bottom__in
+								height: 88px
+
+			.catalog-bottom 
+				height: auto
+				background-size: cover
+				margin-bottom: 0
+				.catalog-bottom__left
+					width: 100%
+					float: none
+					padding-left: 36px
+					padding-top: 30px
+					margin-top: 20px
+				.catalog-bottom__right
+					width: 100%
+					float: none
+					padding-bottom: 20px
+					&::before
+						display: none
+					.catalog-form__left
+						width: 100%
+					.catalog-form__right
+						width: 100%
+					.catalog-button
+						padding-top: 5px
+						width: 100%
+						button
+							height: 40px
+							line-height: 40px
+	// catalog-special
+	.catalog-special 
+		.spe-slider__box
+			width: 100%
+			float: left
+			margin-bottom: 20px
+			.spe-slider__item
+				height: 450px
+		.catalog-special__cont
+			width: 100%
+	.catalog-special .catalog-special__cont .cont-top
+		padding: 15px 0
+
+	.catalog-special .catalog-special__cont .cont-bottom .cont-bottom__item
+		width: 33.33333%
+
+	.catalog-special .spe-bottom .spe-desc
+		padding-right: 0
+
+	
+	// section-two
+	.section-two
+		.what-tu 
+			float: none
+			width: 100%	
+			height: 400px
+		.what-tu__right
+			width: 100%
+			float: none
+			.it1
+				width: 50%
+				padding-right: 30px
+				padding-top: 30px
+			.it2
+				width: 50%
+				padding-right: 30px
+				padding-top: 30px
+			.it3
+				width: 50%
+				padding-right: 30px
+				padding-top: 30px
+			.it4
+				padding-right: 30px
+				padding-top: 30px
+				width: 50%
+				overflow: hidden
+	// section-four
+	.section-four 
+		.container
+			.title
+				width: 100%
+				text-align: center
+		.ous-box 
+			.ous-item 
+				.item-icon
+					width: 100% !important
+					text-align: center
+					margin: 0
+					&::after
+						display: none
+				.item-text
+					width: 100% !important
+					text-align: center
+
+	// section-five
+	.section-five
+		height: auto 
+		.five-left
+			width: 100%
+			height: auto
+			.five-left__in
+				width: 750px
+				padding: 20px 15px
+				margin: 0 auto
+				p
+					line-height: 50px
+		.five-right
+			width: 100%
+			height: auto
+			.five-right__in
+				width: 750px
+				padding: 50px 15px
+				height: auto
+				margin: 0 auto
+				ul
+					padding-left: 50px
+					li
+						&:last-child
+							margin-bottom: 0
+	// section-six
+	.section-six
+		padding-bottom: 30px
+		height: auto
+		
+
+	// section-seven
+	.section-seven
+		height: auto 
+		.seven-left
+			width: 100%
+			height: auto
+			.seven-left__in
+				width: 750px
+				padding: 20px 15px
+				margin: 0 auto
+				p
+					line-height: 40px
+		.seven-right
+			width: 100%
+			height: auto
+			.seven-right__in
+				width: 750px
+				padding: 50px 15px
+				height: auto
+				margin: 0 auto
+				ul
+					padding-left: 50px
+					li
+						&:last-child
+							margin-bottom: 0
+
+
+	// section-six
+	.section-six 
+		.six-item__box
+			@include clearfix 
+			.six-item 
+				.six-img::after
+					display: none
+				.six-text
+				&:nth-child(1),
+				&:nth-child(2),
+				&:nth-child(3),
+					margin-bottom: 40px
+					width: 33.33333%
+				&:nth-child(4),
+				&:nth-child(5)
+					width: 50%
 
 
 	// footer
@@ -1030,8 +1362,124 @@
 							height: 40px
 							line-height: 40px
 							letter-spacing: 5px
+	// catalog
+	.catalog
+		.more-less.more-show 
+			background-image: none
+		.more-less.less-show
+			background-image: none
 
-	
+	// .section-one
+	.section-one
+		height: 400px
+		a
+			.section-one__title
+				padding-top: 40px
+				margin-bottom: 50px
+				p
+					font-size: em(50px)
+					line-height: 60px
+			.section-one__desc
+				p
+					font-size: em(23px)
+					line-height: 32px
+
+	// section-four
+	.section-four 
+		padding-top: 30px
+		.container
+			.title
+				width: 100%
+				text-align: center
+				span
+					font-size: em(30px)
+		.ous-box 
+			padding: 0
+			.ous-item
+				margin-bottom: 10px
+				&:nth-child(1), 
+				&:nth-child(2), 
+				&:nth-child(3), 
+				&:nth-child(4) 
+					width: 50% 
+				&:nth-child(5) 
+					width: 100%
+				.item-icon
+					&::before
+						display: none
+				// .item-icon
+				// 	width: 100% !important
+				// 	text-align: center
+				// 	margin: 0
+				// 	&::after
+				// 		display: none
+				// .item-text
+				// 	width: 100% !important
+				// 	text-align: center
+
+	// section-five
+	.section-five
+		height: auto 
+		.five-left
+			width: 100%
+			height: auto
+			.five-left__in
+				width: 100%
+				padding: 20px 15px
+				margin: 0 auto
+				p
+					line-height: 50px
+		.five-right
+			width: 100%
+			height: auto
+			.five-right__in
+				width: 100%
+				padding: 50px 15px
+				height: auto
+				margin: 0 auto
+				ul
+					padding-left: 50px
+					li
+						margin-bottom: 50px
+						span
+							width: 50px
+							height: 50px
+							margin-top: -25px
+						&:last-child
+							margin-bottom: 0
+
+	// section-seven
+	.section-seven
+		height: auto 
+		.seven-left
+			width: 100%
+			height: auto
+			.seven-left__in
+				width: 100%
+				padding: 10px 15px
+				margin: 0 auto
+				p
+					line-height: 35px
+		.seven-right
+			width: 100%
+			height: auto
+			.seven-right__in
+				width: 100%
+				padding: 50px 15px
+				height: auto
+				margin: 0 auto
+				ul
+					padding-left: 50px
+					li
+						margin-bottom: 50px
+						span
+							width: 50px
+							height: 50px
+							margin-top: -25px
+						&:last-child
+							margin-bottom: 0
+
+
 	// footer
 	footer
 		height: auto
@@ -1182,8 +1630,45 @@
 				border-right: none
 				p
 					font-size: em(25px)
-
+	// .section-one
+	.section-one
+		height: auto
+		padding-bottom: 30px
+		a
+			.section-one__title
+				padding-top: 30px
+				margin-bottom: 40px
+				padding-left: 0
+				p
+					font-size: em(40px)
+					line-height: 50px
+			.section-one__desc
+				padding-left: 0
+				p
+					font-size: em(20px)
+					line-height: 28px
+	
+	// section-six
+	.section-six 
+		padding: 20px 0 0
+		height: auto
+		.six-title
+			text-align: center
+			padding: 20px 0
+			span
+				font-size: 30px
+		.six-item__box
+			@include clearfix 
+			.six-item 
+				width: 100% !important
+				margin-bottom: 20px !important
+				.six-img::after
+					display: none
+				.six-text
+					padding-top: 25px
 				
+
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 510px)
@@ -1415,6 +1900,139 @@
 								padding: 10px !important
 								margin: 0 auto
 
+	// catalog
+	.catalog
+		.more-less.more-show 
+			text-align: left
+			padding-left: 15px
+	.catalog .catalog-box .catalog-bottom .catalog-bottom__right
+		padding: 20px 15px	
+
+	.catalog .catalog-box .catalog-bottom .catalog-bottom__left
+		padding: 20px 0
+		text-align: center
+		span
+			font-size: em(28px)	
+
+	// catalog-special
+	.catalog-special .catalog-special__title
+		text-align: center
+	.catalog-special .catalog-special__title span
+		font-size: em(30px)
+		white-space: normal !important
+
+	.catalog-special .spe-bottom
+		margin-top: 30px
+
+	.catalog-special .catalog-special__cont .cont-bottom .cont-bottom__item
+		width: 100%
+		margin-bottom: 10px
+	.catalog-special .catalog-special__cont .cont-bottom .cont-bottom__item a .cont-item__in
+		min-width: 90%
+			
+	.catalog-special .spe-slider__box .spe-slider__item .spe-title p	
+		line-height: 45px
+
+	// section-two
+	.section-two
+		padding: 30px 0
+		.what-tu 
+			float: none
+			width: 100%	
+			height: auto
+			padding: 20px
+		.what-tu__right
+			width: 100%
+			float: none
+			.it1
+				width: 100%
+				padding: 40px 20px
+				height: auto
+			.it2
+				width: 100%
+				padding: 40px 20px
+				height: auto
+			.it3
+				width: 100%
+				padding: 40px 20px
+				height: auto
+			.it4
+				width: 100%
+				padding: 40px 20px
+				height: auto
+
+	// section-five
+	.section-five
+		height: auto 
+		.five-left
+			width: 100%
+			height: auto
+			.five-left__in
+				width: 100%
+				padding: 20px 15px
+				margin: 0 auto
+				p
+					line-height: 30px
+					font-size: 18px
+					letter-spacing: 5px
+		.five-right
+			width: 100%
+			height: auto
+			.five-right__in
+				width: 100%
+				padding: 50px 15px
+				height: auto
+				margin: 0 auto
+				ul
+					padding-left: 50px
+					li
+						margin-bottom: 50px
+						font-size: 16px
+						line-height: 22px
+						span
+							width: 50px
+							height: 50px
+							margin-top: -25px
+						&:last-child
+							margin-bottom: 0
+
+	// section-seven
+	.section-seven
+		height: auto 
+		.seven-left
+			width: 100%
+			height: auto
+			.seven-left__in
+				width: 100%
+				padding: 20px 15px
+				margin: 0 auto
+				p
+					line-height: 30px
+					font-size: 18px
+					letter-spacing: 5px
+		.seven-right
+			width: 100%
+			height: auto
+			.five-right__in
+				width: 100%
+				padding: 50px 15px
+				height: auto
+				margin: 0 auto
+				ul
+					padding-left: 50px
+					li
+						margin-bottom: 50px
+						font-size: 16px
+						line-height: 22px
+						span
+							width: 50px
+							height: 50px
+							margin-top: -25px
+						&:last-child
+							margin-bottom: 0
+	header .header-top .container .form-right form .form-hdr .close-form
+		top: -28px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 460px)
 	// header
@@ -1478,7 +2096,7 @@
 							width: 260px
 	header .header-top .container .form-right form .form-hdr .close-form
 		left: -11px
-		top: -40px
+		top: -28px
 
 
 /* Custom, iPhone Retina */

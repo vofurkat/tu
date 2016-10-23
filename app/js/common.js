@@ -13,6 +13,8 @@ $(function() {
 	$('.cart-box .product-img .product-img__in').imgLiquid();
 	$('.reviews .catalog-box .catalog-item').imgLiquid();
 	$('.reviews .reviews-img .reviews-img__box .comm-img').imgLiquid();
+	$('.catalog .catalog-box .catalog-left .catalog-img').imgLiquid();
+	$('.catalog-special .spe-slider__box .spe-slider__item').imgLiquid();
 
 	// open mobil menu
 	$(".toggle-mnu").click(function() {
@@ -103,6 +105,22 @@ $(function() {
 
 	});
 
+	// animate far label + input cart page
+	$('.catalog .catalog-box .catalog-bottom .catalog-bottom__right input').each(function() {
+		$(this).on('focus', function() {
+			$(this).parent('.css-catalog').addClass('active-catalog');
+		});
+
+		$(this).on('blur', function() {
+			if ($(this).val().length == 0) {
+				$(this).parent('.css-catalog').removeClass('active-catalog');
+			}
+		});
+
+		if ($(this).val() != '') $(this).parent('.css-catalog').addClass('active-catalog');
+
+	});
+
 	$(".show-form").click(function(){
 		$(".form-right").removeClass("form-noactive");
 	});
@@ -127,6 +145,8 @@ $(function() {
 		autoplay: true,
 		loop: true
 	});
+
+	
 
 	// tab
 	$( "#tabs" ).tabs();
@@ -178,6 +198,49 @@ $(function() {
 		}
 		return false;
 	});
+
+	$('.catalog .catalog-box').readmore({
+		speed: 200,
+        collapsedHeight: 275,
+        heightMargin: 16,
+        moreLink: '<a href="#" class="more-show more-less">СМОТРЕТЬ ВСЕ ТУ</a>',
+        lessLink: '<a href="#" class="less-show more-less">СВЕРНУТЬ</a>',
+        embedCSS: true,
+        blockCSS: 'display: block; width: 100%;',
+        startOpen: false,
+
+		afterToggle: function(trigger, element, expanded) {
+			if(expanded) { 
+				$('.catalog .catalog-box').each(function() {
+					var tesr = $(this).next();
+					$(tesr).each(function() {
+						if($(this).hasClass("less-show")) {
+							$(this).prev().find(".arrow-bottom").addClass("arrow-top");
+						}
+					});
+				});
+			}
+			if(!expanded) { 
+				$('.catalog .catalog-box').each(function() {
+					var tesr = $(this).next();
+					$(tesr).each(function() {
+						if($(this).hasClass("more-show")) {
+							$(this).prev().find(".arrow-bottom").removeClass("arrow-top");
+						}
+					});
+				});
+			}
+		}
+	});
+
+	//owlCarousel slider catalog
+	$(".catalog-special .spe-slider__box").owlCarousel({
+		items: 1,
+		dots: true,
+		autoplay: true,
+		loop: true
+	});
+
 
 	// dotdotdot
   	$(".special-offer .offers-box .offer .offer-desc").dotdotdot();

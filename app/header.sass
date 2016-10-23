@@ -285,8 +285,8 @@ header
 			z-index: 10
 			h2
 				position: absolute
-				left: -103px
-				bottom: 54px
+				left: -92px
+				bottom: 39px
 				font-family: "PlayfairDisplayBlack"
 				color: $accent2
 				font-size: em(172px)
@@ -345,18 +345,17 @@ header
 					margin-right: 66px
 					&:last-child
 						margin-right: 0
-					
-
 					a
 						color: #333447
 						text-transform: uppercase
-						font-size: em(12px)
+						font-size: em(13px)
 						font-family: $roboblack
 						letter-spacing: 2.2px
 						@include transition(all .4s)
 						&:hover,
-						&:hover
+						&:link
 							text-decoration: none
+						&:hover
 							color: $accent
 						@include transform(translateZ(0))
 						@include backface-visibility(hidden)
@@ -367,7 +366,7 @@ header
 							z-index: 1
 							left: 0px
 							right: 100%
-							bottom: -16px
+							bottom: -15px
 							background: $accent
 							height: 3px
 							@include transition-property(right)
@@ -379,7 +378,7 @@ header
 							width: 7px
 							height: 7px
 							background-color: $accent
-							bottom: -18px
+							bottom: -17px
 							right: 100%
 							@include transition-property(right)
 							@include transition-duration(0.4s)
@@ -533,14 +532,7 @@ header
 							p
 								top: 50%
 								@include transform(translate(-50%, 0%))
-				&:nth-child(6),
-				&:nth-child(7),
-				&:nth-child(8),
-				&:nth-child(9),
-				&:nth-child(10)
-					.info-bottom
-						top: 210px
-						height: 40px
+				
 	.header-reiviews
 		margin-bottom: 50px
 		.header-search
@@ -711,7 +703,8 @@ header
 								width: 100%
 								height: 100%
 
-
+	.header-xassp
+		padding-bottom: 200px
 
 
 

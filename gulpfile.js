@@ -59,7 +59,8 @@ gulp.task('libs', function() {
 		'app/libs/image-resizing/imgLiquid-min.js',
 		'app/libs/dotdotdot-master/jquery.dotdotdot.js',
 		'app/libs/owlcarousel/owl.carousel.min.js',
-		'app/libs/jquery-ui/jquery-ui.js'
+		'app/libs/jquery-ui/jquery-ui.js',
+		'app/libs/Readmore/readmore.js'
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
